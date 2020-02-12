@@ -4,6 +4,7 @@
             }
             steps {
                     echo "testing the master branch"
+                    echo "testing the master branch"
             }
         }
         stage('Deploy for production') {
