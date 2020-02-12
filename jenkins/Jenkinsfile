@@ -1,17 +1,17 @@
-     stage('Deliver for development') {
-            when {
-                branch 'master'
-            }
+pipeline {
+    agent {
+        any
+    }
+    stages {
+        stage('Build') {
             steps {
-                    echo "testing the master branch"
-                    echo "testing the master branch"
+                echo "building the image"
             }
         }
-        stage('Deploy for production') {
-            when {
-                branch '	bitwiseman-patch-1'
-            }
+        stage('Test') {
             steps {
-              echo "testing the bitwiseman-patch-1"
+                echo "building the image"
             }
         }
+    }
+}
